@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Uebersicht Alarme</title>
+</head>
+<body>
+    <h2>Aktive Alarme:</h2>
+    <ul>
+#foreach($alarm in $alarmList)
+	<li>Am $alarm.day.$alarm.month.$alarm.year um $alarm.hour:$alarm.minute Uhr</li>
+#end
+    </ul>
+</body>
